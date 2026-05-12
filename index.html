@@ -22,8 +22,16 @@
       }
     </style>
 
-    <iframe src="https://bluemonkey.craftstudio.dev/" sandbox="allow-scripts allow-same-origin" allowfullscreen></iframe>
+    <div style="position: relative;">
 
+  <div style="position: absolute; z-index: 1; width: 200px; height: 200px; background: red;">
     <iframe src="https://www.google.com/" allowfullscreen></iframe>
+  </div>
+
+  <div style="position: absolute; z-index: 2; width: 100px; height: 100px; background: blue; top: 50px; left: 50px;">
+    <iframe src="https://bluemonkey.craftstudio.dev/" sandbox="allow-scripts allow-same-origin" allowfullscreen></iframe>
+  </div>
+
+</div>
 </body>
 </html>
